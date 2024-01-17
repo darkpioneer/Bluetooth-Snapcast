@@ -4,6 +4,15 @@
 This documentation outlines the steps to set up a Raspberry Pi to route Bluetooth audio input to a null-sink and then forward it to a Snapserver using a pipe or netcat (nc).  
 This setup is ideal for creating a wireless multi-room audio system.
 
+## Motivation
+
+### The Need
+My journey began with a personal need: to stream audio from locally connected Bluetooth devices, like my phone, across multiple devices on my network. This was particularly important for enjoying podcasts and audiobooks seamlessly in different areas of my home.
+
+### The Solution
+This project addresses that need by enabling the Raspberry Pi to act as a bridge, streaming Bluetooth audio to all Snapclients on the network. Additionally, for an integrated experience, it allows for looping back the Bluetooth audio to the same Raspberry Pi. This is achieved by running Snapclient on the Pi itself and setting the appropriate source, ensuring a cohesive multi-room audio experience.
+
+
 ## Prerequisites
 - Raspberry Pi with Bluetooth capability.
 - Snapserver installed on the network.
